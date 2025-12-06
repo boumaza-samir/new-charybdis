@@ -4,14 +4,14 @@ config SHIELD_CHARYBDIS_LEFT
 config SHIELD_CHARYBDIS_RIGHT_STANDALONE
 	def_bool $(shields_list_contains,charybdis_right_standalone)
 
-config SHIELD_CHARYBDIS_RIGHT_DONGLE
-	def_bool $(shields_list_contains,charybdis_right_dongle)
+config SHIELD_DONGLE_CHARYBDIS_RIGHT
+	def_bool $(shields_list_contains,dongle_charybdis_right)
 
-config SHIELD_PROSPECTOR_DONGLE
-	def_bool $(shields_list_contains,prospector_dongle)
+config SHIELD_DONGLE_PROSPECTOR
+	def_bool $(shields_list_contains,dongle_prospector)
 
-config SHIELD_BWSHOCKLEY_PROSPECTOR
-	def_bool $(shields_list_contains,bwshockley_prospector)
+config SHIELD_DONGLE_BWSHOCKLEY_PROSPECTOR
+	def_bool $(shields_list_contains,dongle_bwshockley_prospector)
 
-config SHIELD_NICE_DONGLE
-	def_bool $(shields_list_contains,nice_dongle)
+config SHIELD_DONGLE_NICE
+	def_bool $(shields_list_contains,dongle_nice)

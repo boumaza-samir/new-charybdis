@@ -45,10 +45,10 @@ For faster builds, you can specify the configuration directly:
 ./build.py -n 1
 
 # Build by shield name (partial match)
-./build.py -s "nice_dongle"
+./build.py -s "dongle_nice"
 
 # Build by board and shield (exact match)
-./build.py -b nice_nano_v2 -s "nice_dongle dongle_display"
+./build.py -b nice_nano_v2 -s "dongle_nice dongle_display"
 
 # List available configurations
 ./build.py -l
@@ -72,13 +72,13 @@ For faster builds, you can specify the configuration directly:
    └─ Snippet: studio-rpc-usb-uart
    └─ CMake args: -DCONFIG_ZMK_STUDIO=y
 
-3. charybdis_right_dongle (nice_nano_v2)
+3. dongle_charybdis_right (nice_nano_v2)
 
-4. prospector_dongle prospector_adapter (seeeduino_xiao_ble)
+4. dongle_prospector prospector_adapter (seeeduino_xiao_ble)
    └─ Snippet: studio-rpc-usb-uart
    └─ CMake args: -DCONFIG_ZMK_STUDIO=y
 
-5. nice_dongle dongle_display (nice_nano_v2)
+5. dongle_nice dongle_display (nice_nano_v2)
    └─ Snippet: studio-rpc-usb-uart
    └─ CMake args: -DCONFIG_ZMK_STUDIO=y
 
@@ -95,9 +95,9 @@ Built firmware files will be in:
 
 - `manual_build/artifacts/charybdis-left/zephyr/zmk.uf2`
 - `manual_build/artifacts/charybdis-right-standalone/zephyr/zmk.uf2`
-- `manual_build/artifacts/charybdis-right-dongle/zephyr/zmk.uf2`
-- `manual_build/artifacts/prospector-dongle-prospector-adapter/zephyr/zmk.uf2`
-- `manual_build/artifacts/nice-dongle-dongle-display/zephyr/zmk.uf2`
+- `manual_build/artifacts/dongle-charybdis-right/zephyr/zmk.uf2`
+- `manual_build/artifacts/dongle-prospector-prospector-adapter/zephyr/zmk.uf2`
+- `manual_build/artifacts/dongle-nice-dongle-display/zephyr/zmk.uf2`
 - `manual_build/artifacts/settings-reset/zephyr/zmk.uf2`
 
 Additionally, firmware is automatically copied to:
@@ -119,7 +119,7 @@ The build configuration now includes a nice!nano-based dongle with a 128x32 OLED
 
 The 128x32 OLED configuration automatically disables the bongo cat and modifier widgets to fit the smaller display. The display uses I2C connected to the nice!nano's pro_micro_i2c bus.
 
-To customize the display, edit `config/boards/shields/charybdis/nice_dongle.conf`:
+To customize the display, edit `config/boards/shields/charybdis/dongle_nice.conf`:
 
 - Enable WPM: `CONFIG_ZMK_DONGLE_DISPLAY_WPM=y`
 - Change layer alignment: `CONFIG_ZMK_DONGLE_DISPLAY_LAYER_TEXT_ALIGN="left"` (or "center", "right")
