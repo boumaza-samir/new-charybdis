@@ -198,7 +198,7 @@
 &kp TAB    &kp Q        &kp W        &kp E         &kp R          &kp T               &kp Y  &kp U               &kp I             &kp O          &kp P           &kp BSLH
 &kp RCTRL  &kp A        &kp S        &kp D         &kp F          &kp G               &kp H  &kp J               &kp K             &kp L          &kp SEMI        &kp SQT
 &kp LSFT   &hml LGUI Z  &hml LALT X  &hml LCTRL C  &hml LSHIFT V  &kp B               &kp N  &hmr RSHIFT M       &hmr RCTRL COMMA  &hmr RALT DOT  &hmr RGUI FSLH  &kp RSFT
-           &kp LALT     &mo LOWER    &mo POINTER   &gui_ctrlb     &kp LCTRL           &kp RET  &blt SYMBOLS SPACE   &kp BACKSPACE
+           &kp LALT     &mo LOWER    &mo POINTER   &gui_ctrlb     &kp LCTRL           &studio_unlock RET  &blt SYMBOLS SPACE   &kp BACKSPACE
             >;
         };
 
